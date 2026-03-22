@@ -114,13 +114,13 @@ def load_icons():
     ถ้ามีไฟล์ helmet.png / no_helmet.png ในโฟลเดอร์เดียวกับ app.py จะใช้ไฟล์จริง
     ถ้าไม่มี จะสร้าง icon placeholder ให้เอง
     """
-    if os.path.exists("helmet.png"):
-        helmet_icon = Image.open("helmet.png").convert("RGBA")
+    if os.path.exists("helmet.jpg"):
+        helmet_icon = Image.open("helmet.jpg").convert("RGBA")
     else:
         helmet_icon = create_default_icon("H", (0, 170, 80, 255))
 
-    if os.path.exists("no_helmet.png"):
-        no_helmet_icon = Image.open("no_helmet.png").convert("RGBA")
+    if os.path.exists("no_helmet.jpg"):
+        no_helmet_icon = Image.open("no_helmet.jpg").convert("RGBA")
     else:
         no_helmet_icon = create_default_icon("X", (220, 40, 40, 255))
 

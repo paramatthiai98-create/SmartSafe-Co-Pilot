@@ -4,4 +4,4 @@ streamlit-autorefresh
 ultralytics
 opencv-python-headless
 pillow
-numpy
+numpy<2
